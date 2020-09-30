@@ -1,0 +1,349 @@
+@import '~bootstrap/scss/src/bootstrap-grid';
+@import '~bootstrap/scss/src/bootstrap-reboot';
+@import '~bootstrap/scss/src/bootstrap';
+.body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #000;
+}
+
+.header__container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__logo-link {
+    margin-left: 47%;
+}
+
+.header__logo {
+    width: 70px;
+    height: 70px;
+}
+
+.header__login-btn {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgb(23, 134, 245);
+    box-shadow: 0 2px 0 rgb(17, 113, 223);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+    width: 90px;
+    &:hover {
+        opacity: 0.7;
+    }
+    cursor: pointer;
+}
+
+.header__register-btn {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #32CD32;
+    box-shadow: 0 2px 0 #228B22;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+    width: 140px;
+    &:hover {
+        opacity: 0.7;
+    }
+    cursor: pointer;
+}
+
+.list__name {
+    font-family: Quarion, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.list {}
+
+.list__container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list__record {
+    display: flex;
+}
+
+.record__wrapper {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-family: Quarion, sans-serif;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #C0C0C0;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.list__record+.list__record {
+    margin-top: -1px;
+}
+
+.record__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 600px;
+}
+
+.record__image {
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+}
+
+.record__artist {
+    font-weight: bold;
+}
+
+.record__name {
+    line-height: 1.3;
+}
+
+.record__year {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.record__admin-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.record__change-btn {
+    background-color: rgb(23, 134, 245);
+    box-shadow: 0 2px 0 rgb(17, 113, 223);
+    border-radius: 5px;
+    padding: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Quarion, sans-serif;
+    width: 110px;
+    &:hover {
+        opacity: 0.7;
+    }
+    margin-bottom: 10px;
+}
+
+.record__delete-btn {
+    background-color: #DC143C;
+    box-shadow: 0 2px 0 #B22222;
+    border-radius: 5px;
+    padding: 3px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Quarion, sans-serif;
+    width: 110px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.list__paginator {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.paginator__page {
+    font-family: Quarion, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.paginator__page-selected {
+    color: #B8860B;
+    cursor: text;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer {
+    border-top: 1px solid #000;
+}
+
+.footer__container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer__links {
+    font-family: Quarion, sans-serif;
+    font-size: 12px;
+}
+
+.footer__link {
+    font-family: Quarion, sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    &:hover {
+        color: #B8860B;
+    }
+}
+
+.record__admin-form {
+    width: 580px;
+    height: 500px;
+    border: 2px solid #000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+}
+
+.admin-form__block {
+    opacity: 1;
+    transition: all 0.2s ease-out;
+}
+
+.admin-form__none {
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.admin-form__close {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.close__icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.admin-form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+}
+
+.record__change-image {
+    border: 1px solid #000;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.record__change-artist {
+    border: 1px solid #000;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.record__change-name {
+    border: 1px solid #000;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.record__change-year {
+    border: 1px solid #000;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.record__save-btn {
+    background-color: #32CD32;
+    box-shadow: 0 2px 0 #228B22;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Quarion, sans-serif;
+    height: 30px;
+    width: 130px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1140px) {
+    .header__container,
+    .list__container,
+    .paginator__container {
+        width: 768px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .list__record {
+        width: 100%;
+    }
+}

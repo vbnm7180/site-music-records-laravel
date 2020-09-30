@@ -1,0 +1,77 @@
+@import '~bootstrap/scss/src/bootstrap-grid';
+@import '~bootstrap/scss/src/bootstrap-reboot';
+@import '~bootstrap/scss/src/bootstrap';
+.register-form {}
+
+.register-form__container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.register-form__name {
+    font-family: Quarion, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.register-form__email {
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 20px;
+    &::placeholder {
+        padding-left: 65px;
+    }
+}
+
+.register-form__password {
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.register-form__password-rep {
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.register-form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #32CD32;
+    box-shadow: 0 3px 0 #228B22;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Quarion, sans-serif;
+    width: 195px;
+    height: 40px;
+    &:hover {
+        opacity: 0.7;
+    }
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
