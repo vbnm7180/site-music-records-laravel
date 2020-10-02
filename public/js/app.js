@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -102,7 +102,7 @@ $('.close__icon').on('click', function () {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!************************************!*\
   !*** multi ./resources/js/main.js ***!
   \************************************/

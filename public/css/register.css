@@ -1,14 +1,18 @@
-@import '~bootstrap/scss/src/bootstrap-grid';
-@import '~bootstrap/scss/src/bootstrap-reboot';
-@import '~bootstrap/scss/src/bootstrap';
-.register-form {}
-
 .register-form__container {
     width: 1140px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -27,9 +31,22 @@
     font-family: Quarion, sans-serif;
     border-bottom: 1px solid #C0C0C0;
     margin-bottom: 20px;
-    &::placeholder {
-        padding-left: 65px;
-    }
+}
+
+.register-form__email::-webkit-input-placeholder {
+    padding-left: 65px;
+}
+
+.register-form__email:-ms-input-placeholder {
+    padding-left: 65px;
+}
+
+.register-form__email::-ms-input-placeholder {
+    padding-left: 65px;
+}
+
+.register-form__email::placeholder {
+    padding-left: 65px;
 }
 
 .register-form__password {
@@ -53,10 +70,17 @@
 }
 
 .register-form__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: #32CD32;
+    -webkit-box-shadow: 0 3px 0 #228B22;
     box-shadow: 0 3px 0 #228B22;
     border-radius: 5px;
     color: #fff;
@@ -64,14 +88,9 @@
     font-family: Quarion, sans-serif;
     width: 195px;
     height: 40px;
-    &:hover {
-        opacity: 0.7;
-    }
     cursor: pointer;
 }
 
-.footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+.register-form__btn:hover {
+    opacity: 0.7;
 }

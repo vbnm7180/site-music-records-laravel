@@ -1,9 +1,11 @@
-@import '~bootstrap/scss/src/bootstrap-grid';
-@import '~bootstrap/scss/src/bootstrap-reboot';
-@import '~bootstrap/scss/src/bootstrap';
 .body {
     width: 100%;
     height: 100%;
+}
+
+.body__wrapper {
+    min-height: 100%;
+    padding-bottom: 44px;
 }
 
 .header {
@@ -13,9 +15,18 @@
 .header__container {
     width: 1140px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -32,42 +43,58 @@
 
 .header__login-btn {
     margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: rgb(23, 134, 245);
-    box-shadow: 0 2px 0 rgb(17, 113, 223);
+    background-color: #1786f5;
+    -webkit-box-shadow: 0 2px 0 #1171df;
+    box-shadow: 0 2px 0 #1171df;
     border-radius: 5px;
     color: #fff;
     font-size: 16px;
     font-family: Quarion, sans-serif;
     width: 90px;
-    &:hover {
-        opacity: 0.7;
-    }
     cursor: pointer;
+}
+
+.header__login-btn:hover {
+    opacity: 0.7;
 }
 
 .header__register-btn {
     margin-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 7px;
     padding-bottom: 7px;
     background-color: #32CD32;
+    -webkit-box-shadow: 0 2px 0 #228B22;
     box-shadow: 0 2px 0 #228B22;
     border-radius: 5px;
     color: #fff;
     font-size: 16px;
     font-family: Quarion, sans-serif;
     width: 140px;
-    &:hover {
-        opacity: 0.7;
-    }
     cursor: pointer;
+}
+
+.header__register-btn:hover {
+    opacity: 0.7;
 }
 
 .list__name {
@@ -78,25 +105,41 @@
     margin-bottom: 50px;
 }
 
-.list {}
-
 .list__container {
     width: 1140px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .list__record {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .record__wrapper {
     width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: Quarion, sans-serif;
     font-size: 16px;
@@ -111,9 +154,18 @@
 }
 
 .record__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 600px;
 }
@@ -139,30 +191,42 @@
 }
 
 .record__admin-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 20px;
 }
 
 .record__change-btn {
-    background-color: rgb(23, 134, 245);
-    box-shadow: 0 2px 0 rgb(17, 113, 223);
+    background-color: #1786f5;
+    -webkit-box-shadow: 0 2px 0 #1171df;
+    box-shadow: 0 2px 0 #1171df;
     border-radius: 5px;
     padding: 3px;
     color: #fff;
     font-size: 14px;
     font-family: Quarion, sans-serif;
     width: 110px;
-    &:hover {
-        opacity: 0.7;
-    }
     margin-bottom: 10px;
+}
+
+.record__change-btn:hover {
+    opacity: 0.7;
 }
 
 .record__delete-btn {
     background-color: #DC143C;
+    -webkit-box-shadow: 0 2px 0 #B22222;
     box-shadow: 0 2px 0 #B22222;
     border-radius: 5px;
     padding: 3px;
@@ -170,56 +234,82 @@
     font-size: 14px;
     font-family: Quarion, sans-serif;
     width: 110px;
-    &:hover {
-        opacity: 0.7;
-    }
+}
+
+.record__delete-btn:hover {
+    opacity: 0.7;
+}
+
+.nav__paginator {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .list__paginator {
-    width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 15px;
 }
 
-.paginator__page {
+.paginator__page-link {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.paginator__page-link:visited {
+    color: black;
+}
+
+.paginator__page-active {
     font-family: Quarion, sans-serif;
     font-size: 16px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
     background-color: white;
-    &:hover {
-        opacity: 0.7;
-    }
+}
+
+.paginator__page-active:hover {
+    opacity: 0.7;
+}
+
+.paginator__page-inactive {
+    font-family: Quarion, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    cursor: text;
 }
 
 .paginator__page-selected {
+    font-family: Quarion, sans-serif;
+    font-size: 16px;
     color: #B8860B;
     cursor: text;
-    &:hover {
-        opacity: 1;
-    }
 }
 
 .footer {
     border-top: 1px solid #000;
+    margin-top: -44px;
 }
 
 .footer__container {
     width: 1140px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -235,9 +325,10 @@
     font-size: 12px;
     color: black;
     font-weight: bold;
-    &:hover {
-        color: #B8860B;
-    }
+}
+
+.footer__link:hover {
+    color: #B8860B;
 }
 
 .record__admin-form {
@@ -247,25 +338,35 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: white;
+    visibility: hidden;
     opacity: 0;
 }
 
 .admin-form__block {
+    visibility: visible;
     opacity: 1;
+    -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .admin-form__none {
+    visibility: hidden;
     opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
 .admin-form__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 10px;
 }
@@ -277,9 +378,18 @@
 }
 
 .admin-form__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 16px;
     font-family: Quarion, sans-serif;
@@ -323,6 +433,7 @@
 
 .record__save-btn {
     background-color: #32CD32;
+    -webkit-box-shadow: 0 2px 0 #228B22;
     box-shadow: 0 2px 0 #228B22;
     border-radius: 5px;
     color: #fff;
@@ -330,12 +441,13 @@
     font-family: Quarion, sans-serif;
     height: 30px;
     width: 130px;
-    &:hover {
-        opacity: 0.7;
-    }
 }
 
-@media screen and (min-width:768px) and (max-width:1140px) {
+.record__save-btn:hover {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1140px) {
     .header__container,
     .list__container,
     .paginator__container {

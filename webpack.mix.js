@@ -11,7 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/jquery/jquery-3.5.1.min.js', 'public/js/jquery-3.5.1.min.js');
-mix.sass(['resources/sass/login.scss', 'resources/sass/main.scss', 'resources/sass/register.scss'], 'resources/css/sass.css');
-mix.styles('resources/css', 'public/css/app.css');
+mix.styles(['resources/css/fonts.css', 'resources/css/null.css', 'resources/css/main.css'], 'public/css/app.css');
+mix.styles('resources/css/login.css', 'public/css/login.css');
+mix.styles('resources/css/register.css', 'public/css/register.css');
 mix.js('resources/js/main.js', 'public/js/app.js');

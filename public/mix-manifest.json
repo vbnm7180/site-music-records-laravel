@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/js/jquery-3.5.1.min.js": "/js/jquery-3.5.1.min.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/login.css": "/css/login.css",
+    "/css/register.css": "/css/register.css"
 }
